@@ -1,0 +1,2 @@
+# ArchiveMySQLBackups-Perl
+This script was created to help automate automatic archiving of MySQL Backups on a Linux Machine.  It will copy the *.sql files to a sub folder that is named after the current year and month, then after it copies all the files it will compress that directory into 1 file.  If was designed to run daily before the end of the day so if the year_month.tar.gz exists, it will append to that file. BurnSoft Archive Files (bsaf)
