@@ -1,5 +1,5 @@
 # ArchiveMySQLBackups-Perl
-TThe ArchiveMySQLBackups-Perl ( bsaf.pl ) was created to help automate the automatic archiving of MySQL Backups on a Linux Machine.  It will copy the *.sql files to a sub folder that is named after the current year and month, then after it copies all the files over, it will compress that directory into 1 tar file.
+The ArchiveMySQLBackups-Perl ( bsaf.pl ) was created to help automate the automatic archiving of MySQL Backups on a Linux Machine.  It will copy the *.sql files to a sub folder that is named after the current year and month, then after it copies all the files over, it will compress that directory into 1 tar file.
 It was designed to run daily before the end of the day so if the year_month.tar.gz exists, then it will append to that file.
 
 ## Usage
