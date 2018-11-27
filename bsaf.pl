@@ -8,7 +8,7 @@
 # AUTHOR: BurnSoft www.burnsoft.net
 # DATE  : 10/24/2008
 #
-# PURPOSE: This script was created to help audomate automatic archiving of
+# PURPOSE: This script was created to help automate the automatic archiving of
 #         MySQL Backups on a Linux Machine.  It will copy the *.sql files
 #         to a sub folder that is named after the current year and month,
 #         then after it copies all the files it will compress that directory
@@ -21,15 +21,15 @@ use File::Path;
 use Net::FTP;
 
 my $VERSION     = '1.0.01';                       #Version of Script
-my $foldername  ="";
+my $foldername  ="";                              #place holder
 my $destdir     ="/shares/backups/MySQL/archived"; #Destination Directory
 my $sourcedir   ="/shares/backups/MySQL/*.sql";   #Source Directory with File Extension
 my $DEBUG       =0;                               #Debug Mode (Display Messages)
 my $MOVEONLY    =1;                               #Enable Move Files
 my $DOZIP       =1;                               #Enable Zip compression on folder
 my $DOCLEANUP   =1;                               #Delete the year_month folder after compressing
-my $DestDirFinal="";
-my $ZipDest     ="";
+my $DestDirFinal="";                              #place holder
+my $ZipDest     ="";                              #place holder
 
 &GetDataFormat;
 $DestDirFinal= "$destdir\/$foldername/";
