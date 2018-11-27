@@ -20,7 +20,7 @@
 use File::Path;
 use Net::FTP;
 
-my $VERSION     = '1.0.01';                       #Version of Script
+my $VERSION     = '1.0.2';                       #Version of Script
 my $foldername  ="";                              #place holder
 my $destdir     ="/shares/backups/MySQL/archived"; #Destination Directory
 my $sourcedir   ="/shares/backups/MySQL/*.sql";   #Source Directory with File Extension
